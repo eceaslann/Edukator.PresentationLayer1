@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadPartial") 
+
+<body>
+    <!--header-->
+    @await Component.InvokeAsync("_NavbarPartial")
+    <!--/header-->
+    <!--/Banner-Start-->
+    @await Component.InvokeAsync("_FeaturePartial")
+    <!--//Banner-End-->
+    <!-- /bottom-grids-->
+    @await Component.InvokeAsync("_AboutGridPartial")
+    <!-- //bottom-grids-->
+    <!--/about-section -->
+    @await Component.InvokeAsync("_AboutPartial")
+    <!--//about-section -->
+    <!--/home-stats-->
+    @await Component.InvokeAsync("_StatisticsPartial")
+    <!--//home-stats-->
+    <!--/popular-Courses-->
+    @await Component.InvokeAsync("_CoursePartial")
+
+    <!--//popular-Courses-->
+    <!--/testimonials-->
+    @await Component.InvokeAsync("_TestimonialPartial")
+    <!-- //testimonials -->
+    <!--/subscribe-->
+    @await Html.PartialAsync("~/Views/Default/AddMailSubscribe.cshtml")
+    <!--//subscribe-->
+    <!--/footer-->
+    @await Component.InvokeAsync("_FooterPartial") 
+    <!-- //footer -->
+    <!-- Js scripts -->
+    <!-- move top -->
+    @await Component.InvokeAsync("_ScriptPartial") 
+</body>
+
+</html>
