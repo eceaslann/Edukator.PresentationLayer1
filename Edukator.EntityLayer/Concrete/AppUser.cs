@@ -15,5 +15,7 @@ namespace Edukator.EntityLayer.Concrete
         public string City { get; set; }
         [StringLength(100)]
         public string ImageUrl { get; set; }
+        public List<CourseRegister> CourseRegisters { get; set; }
+
     }
 }

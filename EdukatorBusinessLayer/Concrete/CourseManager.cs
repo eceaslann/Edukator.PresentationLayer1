@@ -18,6 +18,11 @@ namespace Edukator.BusinessLayer.Concrete
             _courseDal = courseDal;
         }
 
+        public List<Course> TGetLast5Course()
+        {
+            return _courseDal.GetLast5Course();
+        }
+
         public void TDelete(Course t)
         {
             _courseDal.Delete(t);

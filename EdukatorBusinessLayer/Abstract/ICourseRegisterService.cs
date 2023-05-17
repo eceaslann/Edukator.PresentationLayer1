@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Edukator.BusinessLayer.Abstract
 {
-    public interface IContactService: IGenericService<Contact>
+    public interface ICourseRegisterService: IGenericService<CourseRegister>
     {
-        public List<Contact> TGetLast4Message();
+        List<CourseRegister> TCourseRegisterListWithCoursesAndUsers();
     }
 }

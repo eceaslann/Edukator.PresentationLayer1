@@ -11,5 +11,8 @@ namespace Edukator.BusinessLayer.Abstract
     {
         List<Course> TGetCourseWithCategory();
         List<Course> TGetCoursesWithCategories();
+        List<Course> TGetLast5Course();
+
+
     }
 }
